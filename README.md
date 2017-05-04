@@ -37,6 +37,7 @@ This should be pretty simple on windows systems with python >=2.7.13 you can jus
 
 ### Planet Key
 This tool basically asks you to input your Planet API Key using a password prompt this is then used for all subsequent tools
+
 ![planet_key](http://i.imgur.com/YwQGbi5.jpg)
 
 If using on a private machine the Key is saved as a csv file for all future runs of the tool.
