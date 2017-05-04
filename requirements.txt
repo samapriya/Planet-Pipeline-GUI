@@ -1,0 +1,12 @@
+Install wxpython from https://wxpython.org/download.php
+
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu utopic main restricted universe"  
+sudo apt-get update
+apt-cache search python-wxgtk3.0
+sudo apt-get install python-wxgtk3.0  
+
+you can remove extra repos if you want
+sudo add-apt-repository --remove "deb http://archive.ubuntu.com/ubuntu utopic main restricted universe"  
+
+also 
+pip install pyshp

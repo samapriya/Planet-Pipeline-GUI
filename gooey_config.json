@@ -1,0 +1,298 @@
+{
+  "language_dir": "C:\\Python27\\ArcGIS10.4\\lib\\site-packages\\gooey\\languages", 
+  "num_optional_cols": 2, 
+  "num_required_cols": 2, 
+  "target": "\"C:\\Python27\\ArcGIS10.4\\python.exe\" -u \"C:\\Users\\samapriya\\Box Sync\\IUB\\Paper Discussions\\Deltas Project Edmond NSF 2016\\Git Codes\\Planet-Pipeline-GUI\\PlanetPipe_GUI.pyc\"", 
+  "language": "english", 
+  "manual_start": false, 
+  "progress_expr": null, 
+  "disable_stop_button": false, 
+  "monospace_display": false, 
+  "default_size": [
+    610, 
+    530
+  ], 
+  "image_dir": "default", 
+  "group_by_type": true, 
+  "disable_progress_bar_animation": false, 
+  "auto_start": false, 
+  "widgets": {
+    "planet_key": {
+      "command": "planet_key", 
+      "contents": []
+    }, 
+    "aoijson": {
+      "command": "aoijson", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--start"
+            ], 
+            "display_name": "start", 
+            "help": "Start date in YYYY-MM-DD?", 
+            "default": "Start date in YYYY-MM-DD", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "DateChooser"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--end"
+            ], 
+            "display_name": "end", 
+            "help": "End date in YYYY-MM-DD?", 
+            "default": "End date in YYYY-MM-DD", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "DateChooser"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--cloud"
+            ], 
+            "display_name": "cloud", 
+            "help": "Maximum Cloud Cover(0-1) representing 0-100", 
+            "default": "Maximum Cloud Cover(0-1)", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--inputfile"
+            ], 
+            "display_name": "inputfile", 
+            "help": "Choose a KML/SHP/geojson/WKT file or Landsat WRS", 
+            "default": "Choose a KML/SHP/geojson/WKT file or Landsat WRS", 
+            "nargs": "", 
+            "choices": [
+              "KML", 
+              "SHP", 
+              "GJSON", 
+              "WKT", 
+              "WRS"
+            ]
+          }, 
+          "required": false, 
+          "type": "Dropdown"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--geo"
+            ], 
+            "display_name": "geo", 
+            "help": "map.geojson/aoi.kml/aoi.shp/aoi.wkt file", 
+            "default": "map.geojson/aoi.kml/aoi.shp/aoi.wkt file or 6 digit WRS PathRow", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiFileChooser"
+        }
+      ]
+    }, 
+    "activatepl": {
+      "command": "activatepl", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--aoi"
+            ], 
+            "display_name": "aoi", 
+            "help": "Choose JSON file created earlier", 
+            "default": "Choose JSON file to be used with Planet API/Created Earlier", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiFileChooser"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--action"
+            ], 
+            "display_name": "action", 
+            "help": "Check/activate", 
+            "default": null, 
+            "nargs": "", 
+            "choices": [
+              "check", 
+              "activate"
+            ]
+          }, 
+          "required": false, 
+          "type": "Dropdown"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--asst"
+            ], 
+            "display_name": "asst", 
+            "help": "PSOrthoTile analytic/REOrthoTile analytic/PSOrthoTile analytic_xml/REOrthoTile analytic_xml", 
+            "default": null, 
+            "nargs": "", 
+            "choices": [
+              "PSOrthoTile analytic", 
+              "REOrthoTile analytic", 
+              "PSOrthoTile analytic_xml", 
+              "REOrthoTile analytic_xml"
+            ]
+          }, 
+          "required": false, 
+          "type": "Dropdown"
+        }
+      ]
+    }, 
+    "downloadpl": {
+      "command": "downloadpl", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--aoi"
+            ], 
+            "display_name": "aoi", 
+            "help": "Choose JSON file created earlier", 
+            "default": "Choose JSON file to be used with Planet API/Created Earlier", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiFileChooser"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--action"
+            ], 
+            "display_name": "action", 
+            "help": "choose download", 
+            "default": "download", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "TextField"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--asst"
+            ], 
+            "display_name": "asst", 
+            "help": "PSOrthoTile analytic/REOrthoTile analytic/PSOrthoTile analytic_xml/REOrthoTile analytic_xml", 
+            "default": null, 
+            "nargs": "", 
+            "choices": [
+              "PSOrthoTile analytic", 
+              "REOrthoTile analytic", 
+              "PSOrthoTile analytic_xml", 
+              "REOrthoTile analytic_xml"
+            ]
+          }, 
+          "required": false, 
+          "type": "Dropdown"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--pathway"
+            ], 
+            "display_name": "pathway", 
+            "help": "Folder Path where PlanetAssets are saved example ./PlanetScope ./RapidEye", 
+            "default": "Folder where you want to save assets", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiDirChooser"
+        }
+      ]
+    }, 
+    "metadata": {
+      "command": "metadata", 
+      "contents": [
+        {
+          "data": {
+            "commands": [
+              "--asset"
+            ], 
+            "display_name": "asset", 
+            "help": "RapidEye/PlantScope/DigitalGlobe MS/DigitalGlobe Pan(RE/PS/DGMS/DGP)?", 
+            "default": "PS", 
+            "nargs": "", 
+            "choices": [
+              "PS", 
+              "RE", 
+              "DGMS", 
+              "DGP"
+            ]
+          }, 
+          "required": false, 
+          "type": "Dropdown"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--mf"
+            ], 
+            "display_name": "mf", 
+            "help": "Metadata folder", 
+            "default": "Metadata folder", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiDirChooser"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--mfile"
+            ], 
+            "display_name": "mfile", 
+            "help": "Metadata filename to be exported with Path.csv", 
+            "default": "Metadata filename browse and create file and click open", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiFileChooser"
+        }, 
+        {
+          "data": {
+            "commands": [
+              "--errorlog"
+            ], 
+            "display_name": "errorlog", 
+            "help": "Errorlog to be exported along with Path.csv", 
+            "default": "Error log browse and create file and click open", 
+            "nargs": "", 
+            "choices": []
+          }, 
+          "required": false, 
+          "type": "MultiFileChooser"
+        }
+      ]
+    }
+  }, 
+  "program_name": "Planet Asset Pipeline", 
+  "progress_regex": null, 
+  "program_description": "Planet Asset Pipeline", 
+  "layout_type": "column", 
+  "show_advanced": true
+}
