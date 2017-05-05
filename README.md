@@ -22,10 +22,10 @@ The application can be also run directly by executing PlanetPipe_GUI.pyc script.
 You require two important packages for this to run
 ```
 WxPython(which is what the GUI is built on)
-for windows(Tested on Windows 10)
+for windows(Tested in Windows 10)
 https://wxpython.org/download.php
 
-for linux(Tested on Ubuntu)
+for linux(Tested in Ubuntu 16)
 sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu utopic main restricted universe"  
 sudo apt-get update
 apt-cache search python-wxgtk3.0
