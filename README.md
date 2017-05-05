@@ -1,5 +1,5 @@
 # Planet Pipeline GUI
-The Planet Pipeline GUI came from the actual cli (command line interface tools) to enable the use of tools required to access control and download planet labs assets (PlanetScope and RapidEye OrthoTiles) as well as parse metadata in a tabular form which maybe required by other applications.
+The Planet Pipeline GUI came from the actual CLI (command line interface tools) to enable the use of tools required to access control and download planet labs assets (PlanetScope and RapidEye OrthoTiles) as well as parse metadata in a tabular form which maybe required by other applications.
 
 ![GUI](http://i.imgur.com/pEaFzKL.gif)
 ## Table of contents
