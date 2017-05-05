@@ -12,7 +12,13 @@ The Planet Pipeline GUI came from the actual cli (command line interface tools) 
 	* [Metadata Parser](#metadata-parser)
 * [Credits](#credits)
 ## Installation
-We assume Earth Engine Python API is installed and EE authorised as desribed [here](https://developers.google.com/earth-engine/python_install). To install:
+We assume Planet Python API is installed you can install by simply running 
+```
+pip install planet
+```
+Further instructions can be found [here](https://www.planet.com/docs/api-quickstart-examples/cli/) 
+
+To install the tool:
 ```
 git clone https://github.com/samapriya/Planet-Pipeline-GUI.git
 cd Planet-Pipeline-GUI && pip install .
