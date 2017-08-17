@@ -53,9 +53,9 @@ def downloadpl_from_parser(args):
         print(' ')
 spacing="                               "
 from gooey import Gooey, GooeyParser
-@Gooey(dump_build_config=True, program_name="Planet and EE Pipeline")
+@Gooey(dump_build_config=True, program_name="Planet Batch Download Pipeline")
 def main(args=None):
-    parser = GooeyParser(description='Planet and EE Pipeline')
+    parser = GooeyParser(description='Planet Batch Download Pipeline')
     subparsers = parser.add_subparsers()
     nonbuffered_stdout = os.fdopen(sys.stdout.fileno(), 'w', 0)
     sys.stdout = nonbuffered_stdout
