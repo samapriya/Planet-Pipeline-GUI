@@ -5,6 +5,7 @@ The Planet Pipeline GUI came from the actual CLI (command line interface tools) 
 
 
 ![GUI](http://i.imgur.com/mz6WfQM.gif)
+
 ## Table of contents
 * [Installation](#installation)
 * [Getting started](#getting-started)
@@ -13,7 +14,6 @@ The Planet Pipeline GUI came from the actual CLI (command line interface tools) 
     * [Activate or Check Asset](#activate-or-check-asset)
     * [Download Size](#download-size)
     * [Download Asset](#download-asset)
-    * [Metadata Parser](#metadata-parser)
 * [Credits](#credits)
 
 ## Installation
